@@ -159,7 +159,13 @@
     background-repeat: no-repeat;
     border: 1px solid #FFFFFF29;
     border-radius: 24px;
+    z-index: 2;
+    transition: all 400ms linear;
     padding: 64px 24px;
+}
+
+.lastbox:hover {
+    border: 1px solid var(--bg-green);
 }
 
 .formdiv {
@@ -342,6 +348,11 @@
     }
 }
 
+.last_right {
+    right: 0;
+    bottom: -30%;
+}
+
 .w_582 {
     max-width: 582px;
 }
@@ -424,30 +435,13 @@
 }
 
 .pb_140 {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .menuicon {
     width: 40px;
     height: 40px;
     overflow: hidden;
-}
-
-.menuicon.show .bar:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
-    transition: all 400ms linear;
-    border-radius: 4px;
-}
-
-.menuicon.show .bar:nth-child(2) {
-    transform: translateX(-100%);
-    transition: all 400ms linear;
-}
-
-.menuicon.show .bar:nth-child(3) {
-    transition: all 400ms linear;
-    transform: translateY(-11px) rotate(-45deg);
-    border-radius: 4px;
 }
 
 .menulist.show {
@@ -476,22 +470,27 @@
     .logo_img {
         max-width: 150px;
     }
+
     .preloader-text {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 }
+
 @media (min-width:576px) {
     .formdiv {
         padding: 2px 2px 2px 16px;
     }
 }
+
 @media (min-width:768px) {
     .pt_md_103 {
         padding-top: 103px !important;
     }
+
     .preloader-text {
-        font-size: 80px;
+        font-size: 90px !important;
     }
+
     .pt_md_110 {
         padding-top: 110px !important;
     }
@@ -530,7 +529,7 @@
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:768px) {
     .menulist {
         flex-direction: column;
         position: fixed !important;
@@ -552,14 +551,41 @@
         background: var(--color-white);
     }
 
+    .menuicon.show .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+        transition: all 400ms ease-in-out;
+        border-radius: 4px;
+    }
+
+    .menuicon.show .bar:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: all 400ms ease-in-out;
+    }
+
+    .menuicon.show .bar:nth-child(3) {
+        transition: all 400ms ease-in-out;
+        transform: translateY(-11px) rotate(-45deg);
+        border-radius: 4px;
+    }
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        transition: all 400ms ease-in-out;
+
+        z-index: 150;
+        background: var(--color-white);
+    }
 }
 
 @media (min-width:992px) {
     .w_512 {
         max-width: 512px;
     }
+
     .preloader-text {
-        font-size: 100px;
+        font-size: 100px !important;
     }
 
     .w_527 {
