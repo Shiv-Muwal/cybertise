@@ -22,7 +22,7 @@
 }
 
 .hero_bg {
-    background-image: url(../images/webp/hero.jpeg);
+    background-image: url(../images/webp/hero.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -351,7 +351,17 @@
 
 .last_right {
     right: 0;
-    bottom: -30%;
+    bottom: 0;
+}
+
+.Ellips845 {
+    right: 5%;
+    top: -30%;
+}
+
+.Ellipse844 {
+    left: 10%;
+    top: -30%;
 }
 
 .w_582 {
@@ -463,6 +473,18 @@
     background: transparent;
     backdrop-filter: blur(30px);
     border: 1px solid var(--bg-green);
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width:576px) {
@@ -593,12 +615,15 @@
     .w_511 {
         max-width: 511px;
     }
-    .w_522{
+
+    .w_522 {
         max-width: 522px;
     }
+
     .w_517 {
         max-width: 517px;
     }
+
     .w_476 {
         max-width: 476px;
     }
