@@ -12,7 +12,16 @@
 .navbar {
     padding: 22.8px 0;
 }
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: var(--bg-dark);
+}
 
+::-webkit-scrollbar-thumb
+{
+	background-color: var(--bg-green);
+}
 .cursor_p {
     cursor: pointer;
 }
