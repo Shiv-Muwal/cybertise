@@ -104,6 +104,9 @@
     border-radius: 24px;
     min-height: 166px;
     margin-top: 31px;
+    max-width: 1036px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .border_left {
@@ -363,9 +366,7 @@
     max-width: 328px;
 }
 
-.w_548 {
-    max-width: 548px;
-}
+
 
 .w_725 {
     max-width: 725px;
@@ -592,7 +593,12 @@
     .w_511 {
         max-width: 511px;
     }
-
+    .w_522{
+        max-width: 522px;
+    }
+    .w_517 {
+        max-width: 517px;
+    }
     .w_476 {
         max-width: 476px;
     }
