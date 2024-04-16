@@ -61,6 +61,8 @@
     position: absolute;
     bottom: -2px !important;
     left: 0;
+    right: 0;
+    margin: 0 auto;
     width: 0;
     height: 1px;
     transition: all 400ms linear;
@@ -161,12 +163,7 @@
     border: 1px solid #FFFFFF29;
     border-radius: 24px;
     z-index: 2;
-    transition: all 400ms linear;
     padding: 64px 24px;
-}
-
-.lastbox:hover {
-    border: 1px solid var(--bg-green);
 }
 
 .formdiv {
