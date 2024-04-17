@@ -478,7 +478,7 @@
             </div>
         </div>
         <div class="line"></div>
-        <p class="mb-0 fs_md color_white op_80 text-center lh_21 py_12">© 2023 Cybertise</p>
+        <p class="mb-0 fs_md color_white op_80 text-center lh_21 py_12">© <span id="year"></span> Cybertise</p>
         <button onclick="topFunction()" id="myBtn" title="Go to top" class="bg-opacity-10 bg_green"><img
                 src="./assets/images/svg/top.png" alt="top"></button>
     </footer>
@@ -488,7 +488,14 @@
     <script src="./assets/js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script>
+        const y = new Date();
+        const getyear = y.getFullYear();
+        document.getElementById("year").innerHTML= getyear
     </script>
 </body>
 
