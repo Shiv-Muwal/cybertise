@@ -25,11 +25,11 @@
 </head>
 
 <body>
-    <div class="preloader-container overflow-hidden">
+    <!-- <div class="preloader-container overflow-hidden">
         <div class="preloader-text ff_outfit">
             <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span><span>...</span>
         </div>
-    </div>
+    </div> -->
     <header class="min-vh-100 hero_bg bg_dark d-flex flex-column position-relative">
         <div class="light_bg position-absolute z-0"></div>
         <div class="gradient_color"></div>
@@ -88,8 +88,9 @@
                         <img src="./assets/images/webp/Ellipse839.webp" alt="Ellipse839" class="w-100">
                     </div>
                     <div class="row w-100">
-                        <div class="col-12 z-2 col-sm-4 mt-4 mt-sm-0 d-flex flex-column align-items-center">
-                            <div class="d-flex flex-column align-items-center">
+                        <div
+                            class="col-12 z-2 col-sm-4 mt-4 mt-sm-0 d-flex justify-content-center justify-content-sm-start">
+                            <div class="d-flex flex-column align-items-center justify-content-sm-start ps_40">
                                 <h3 class="mb-0 color_green fw_500 lh_52 fs_xl ff_outfit text-center">1K+</h3>
                                 <p class="mb-0 fs_md ff_outfit lh_26 fw_400 text-center color_white pt-3">Partners
                                     Globally</p>
@@ -103,8 +104,8 @@
                             </div>
                         </div>
                         <div
-                            class="col-12 z-2 col-sm-4 mt-4 mt-sm-0 mb-4 mb-sm-0 d-flex flex-column align-items-center">
-                            <div class="d-flex flex-column align-items-center">
+                            class="col-12 z-2 col-sm-4 mt-4 mt-sm-0 mb-4 mb-sm-0 d-flex flex-column align-items-sm-end align-items-center">
+                            <div class="d-flex flex-column align-items-center pe_75">
                                 <h3 class="mb-0 color_green fw_500 lh_52 fs_xl ff_outfit text-center">350K+</h3>
                                 <p class="mb-0 fs_md ff_outfit lh_26 fw_400 text-center color_white pt-3">Users
                                     Worldwide</p>
@@ -495,7 +496,7 @@
     <script>
         const y = new Date();
         const getyear = y.getFullYear();
-        document.getElementById("year").innerHTML= getyear
+        document.getElementById("year").innerHTML = getyear
     </script>
 </body>
 

@@ -12,16 +12,16 @@
 .navbar {
     padding: 22.8px 0;
 }
-::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: var(--bg-dark);
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--bg-dark);
 }
 
-::-webkit-scrollbar-thumb
-{
-	background-color: var(--bg-green);
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-green);
 }
+
 .cursor_p {
     cursor: pointer;
 }
@@ -371,7 +371,7 @@
 }
 
 .Ellipse844 {
-    left:0;
+    left: 0;
     opacity: 40%;
     top: -30%;
 }
@@ -409,6 +409,7 @@
 .gap_18 {
     gap: 18px;
 }
+
 
 .gap_15 {
     gap: 15px;
@@ -518,6 +519,14 @@
 @media (min-width:768px) {
     .pt_md_103 {
         padding-top: 103px !important;
+    }
+
+    .pe_75 {
+        padding-right: 75px;
+    }
+
+    .ps_40 {
+        padding-left: 40px;
     }
 
     .preloader-text {
